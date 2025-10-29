@@ -12,7 +12,7 @@ export const routes: Routes = [
   { path: '', redirectTo: 'crew-management-view', pathMatch: 'full' },
   { path: 'error', component: UncaughtErrorComponent },
   { path: 'crew-management-view', component: CrewManagementViewComponent, data: { text: 'Crew-Management-View' } },
-  { path: 'supplies-&-cargo-view', component: SuppliesCargoViewComponent, data: { text: 'Supplies-Cargo-View' } },
+  { path: 'supplies-cargo-view', component: SuppliesCargoViewComponent, data: { text: 'Supplies-Cargo-View' } },
   { path: 'ship-maintenance-view', component: ShipMaintenanceViewComponent, data: { text: 'Ship-Maintenance-View' } },
   { path: 'ammunition-view', component: AmmunitionViewComponent, data: { text: 'Ammunition-View' } },
   { path: 'pirating-plans-view', component: PiratingPlansViewComponent, data: { text: 'Pirating-Plans-View' } },
