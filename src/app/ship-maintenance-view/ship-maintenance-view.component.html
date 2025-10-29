@@ -1,0 +1,47 @@
+<div class="column-layout ship-maintenance-layout">
+  <div class="column-layout maintenance-header-layout">
+    <h4 class="content">
+      Ship Maintenance
+    </h4>
+    <igx-input-group type="search" class="maintenance-search-input">
+      <igx-prefix>
+        <igx-icon class="icon-m7cb7v">
+          search
+        </igx-icon>
+      </igx-prefix>
+      <input type="search" [(ngModel)]="value" igxInput />
+      <igx-hint>Search ship's repairs, Yarr!</igx-hint>
+    </igx-input-group>
+  </div>
+  <div class="row-layout group">
+    @for (item of shipMaintenanceTasksShipMaintenanceTasks; track item) {
+      <igx-card class="maintenance-card">
+        <igx-card-header>
+          <h3 igxCardHeaderTitle>
+            {{ item.task_name }}
+          </h3>
+          <h5 igxCardHeaderSubtitle>
+            {{ item.priority }}
+          </h5>
+        </igx-card-header>
+        <igx-card-content class="body-content">
+          <div class="column-layout maintenance-card-content">
+            <p class="ig-typography__body-2 content">
+              {{ item.due_date }}
+            </p>
+          </div>
+        </igx-card-content>
+        <igx-card-actions class="actions-content">
+          <ng-container igxStart>
+            <button igxButton="contained" type="button" igxRipple class="mark-complete-button">
+              <igx-icon>
+                check_circle
+              </igx-icon>
+              <span>Mark Complete</span>
+            </button>
+          </ng-container>
+        </igx-card-actions>
+      </igx-card>
+    }
+  </div>
+</div>

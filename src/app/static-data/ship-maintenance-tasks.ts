@@ -1,0 +1,4 @@
+// tslint:disable
+export const ShipMaintenanceTasks: { [key: string]: any } = {
+  'ShipMaintenanceTasksType': [{"task_name":"Engine Oil Replacement","priority":"High","due_date":"2024-07-15"},{"task_name":"Hull Inspection","priority":"Medium","due_date":"2024-08-01"},{"task_name":"Safety Equipment Check","priority":"High","due_date":"2024-06-30"},{"task_name":"Propeller Cleaning","priority":"Low","due_date":"2024-09-10"},{"task_name":"Navigation System Update","priority":"Medium","due_date":"2024-07-20"},{"task_name":"Bilge Pump Test","priority":"High","due_date":"2024-06-25"},{"task_name":"Fuel Filter Replacement","priority":"Medium","due_date":"2024-07-05"},{"task_name":"Deck Cleaning","priority":"Low","due_date":"2024-08-15"},{"task_name":"Electrical System Inspection","priority":"High","due_date":"2024-07-01"},{"task_name":"Lifeboat Maintenance","priority":"Medium","due_date":"2024-08-05"}],
+};

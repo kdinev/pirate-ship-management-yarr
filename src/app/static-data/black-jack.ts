@@ -1,0 +1,4 @@
+// tslint:disable
+export const BlackJack: { [key: string]: any } = {
+  'PirateCrewMembersType': [{"name":"Captain Redbeard","role":"Captain","current_task":"Charting course to the hidden cove"},{"name":"One-Eyed Jack","role":"First Mate","current_task":"Inspecting the ship's rigging"},{"name":"Black Molly","role":"Gunner","current_task":"Cleaning and loading cannons"},{"name":"Peg Leg Pete","role":"Navigator","current_task":"Studying the stars for navigation"},{"name":"Sailor Sam","role":"Deckhand","current_task":"Mending sails"},{"name":"Sharktooth Sally","role":"Cook","current_task":"Preparing a meal for the crew"},{"name":"Silent Steve","role":"Lookout","current_task":"Scanning the horizon for enemy ships"},{"name":"Ironhook Ike","role":"Boatswain","current_task":"Supervising deck maintenance"}],
+};

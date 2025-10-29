@@ -1,0 +1,68 @@
+<igx-navbar class="pirate-nav-bar">
+  <igx-navbar-action>
+    <button igxIconButton="flat" igxRipple [igxToggleAction]="pirateNavDrawer">
+      <igx-icon>
+        menu
+      </igx-icon>
+    </button>
+  </igx-navbar-action>
+  <igx-navbar-title class="navbar-content">
+    <h6 class="h6">
+      Black Flag Dispatch, Yarr!
+    </h6>
+  </igx-navbar-title>
+  <button igxIconButton="flat" igxRipple>
+    <igx-icon>
+      search
+    </igx-icon>
+  </button>
+  <button igxIconButton="flat" igxRipple>
+    <igx-icon>
+      settings
+    </igx-icon>
+  </button>
+  <button igxIconButton="flat" igxRipple>
+    <igx-icon>
+      notifications
+    </igx-icon>
+  </button>
+</igx-navbar>
+<div class="row-layout pirate-horizontal-group">
+  <igx-nav-drawer [isOpen]="true" [pin]="true" width="320px" #pirateNavDrawer class="pirate-nav-drawer">
+    <ng-template igxDrawer>
+      <div igxDrawerItem igxRipple [routerLink]="['/crew-management-view']">
+        <igx-icon class="icon">
+          group
+        </igx-icon>
+        <span>Crew Management, Yarr!</span>
+      </div>
+      <div igxDrawerItem igxRipple [routerLink]="['/supplies-cargo-view']">
+        <igx-icon class="icon">
+          inventory
+        </igx-icon>
+        <span>Supplies &amp; Cargo, Yarr!</span>
+      </div>
+      <div igxDrawerItem igxRipple [routerLink]="['/ship-maintenance-view']">
+        <igx-icon class="icon">
+          build
+        </igx-icon>
+        <span>Ship Maintenance, Yarr!</span>
+      </div>
+      <div igxDrawerItem igxRipple [routerLink]="['/ammunition-view']">
+        <igx-icon class="icon">
+          local_fire_department
+        </igx-icon>
+        <span>Ammunition, Yarr!</span>
+      </div>
+      <div igxDrawerItem igxRipple [routerLink]="['/pirating-plans-view']">
+        <igx-icon class="icon">
+          map
+        </igx-icon>
+        <span>Pirating Plans, Yarr!</span>
+      </div>
+    </ng-template>
+  </igx-nav-drawer>
+  <div class="pirate-page-container">
+    <router-outlet></router-outlet>
+  </div>
+</div>

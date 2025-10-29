@@ -1,0 +1,22 @@
+<div class="column-layout pirating-plans-layout">
+  <div class="column-layout pirating-plans-header-layout">
+    <h4 class="pirating-plans-title">
+      Pirating Plans
+    </h4>
+    <igx-input-group type="search" class="pirating-plans-search-input">
+      <igx-prefix>
+        <igx-icon class="icon-es8lp5">
+          search
+        </igx-icon>
+      </igx-prefix>
+      <input type="search" [(ngModel)]="value" igxInput />
+      <igx-hint>Search yer treasure maps, Yarr!</igx-hint>
+    </igx-input-group>
+  </div>
+  <igx-grid [data]="piratePlansDataPiratePlans" primaryKey="target_port" [allowFiltering]="true" filterMode="excelStyleFilter" class="pirating-plans-grid">
+    <igx-column field="target_port" dataType="string" header="Target Port" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+    <igx-column field="bullion_type" dataType="string" header="Bullion" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+    <igx-column field="risk_level" dataType="string" header="Risk Level" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+    <igx-column field="distance" dataType="number" header="Distance" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+  </igx-grid>
+</div>

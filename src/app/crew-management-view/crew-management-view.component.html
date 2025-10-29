@@ -1,0 +1,47 @@
+<div class="column-layout crew-management-layout">
+  <div class="column-layout crew-header-layout">
+    <h4 class="content">
+      Crew Management
+    </h4>
+    <igx-input-group type="search" class="crew-search-input">
+      <igx-prefix>
+        <igx-icon class="icon-ql64g">
+          search
+        </igx-icon>
+      </igx-prefix>
+      <input type="search" [(ngModel)]="value" igxInput />
+      <igx-hint>Search yer hearties, Yarr!</igx-hint>
+    </igx-input-group>
+  </div>
+  <div class="row-layout group">
+    @for (item of blackJackPirateCrewMembers; track item) {
+      <igx-card class="crew-card">
+        <igx-card-header>
+          <h3 igxCardHeaderTitle>
+            {{ item.name }}
+          </h3>
+          <h5 igxCardHeaderSubtitle>
+            {{ item.role }}
+          </h5>
+        </igx-card-header>
+        <igx-card-content class="body-content">
+          <div class="column-layout crew-card-content">
+            <p class="ig-typography__body-2 content">
+              {{ item.current_task }}
+            </p>
+          </div>
+        </igx-card-content>
+        <igx-card-actions class="actions-content">
+          <ng-container igxStart>
+            <button igxButton="contained" type="button" igxRipple class="view-details-button">
+              <igx-icon>
+                info
+              </igx-icon>
+              <span>View Details</span>
+            </button>
+          </ng-container>
+        </igx-card-actions>
+      </igx-card>
+    }
+  </div>
+</div>

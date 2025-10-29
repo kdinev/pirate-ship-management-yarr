@@ -1,0 +1,47 @@
+<div class="column-layout supplies-cargo-layout">
+  <div class="column-layout supplies-cargo-header-layout">
+    <h4 class="content">
+      Supplies &amp; Cargo
+    </h4>
+    <igx-input-group type="search" class="supplies-cargo-search-input">
+      <igx-prefix>
+        <igx-icon class="icon-n3mtwm">
+          search
+        </igx-icon>
+      </igx-prefix>
+      <input type="search" [(ngModel)]="value" igxInput />
+      <igx-hint>Search yer booty, Yarr!</igx-hint>
+    </igx-input-group>
+  </div>
+  <div class="row-layout group">
+    @for (item of shipSuppliesCargoShipSupplies; track item) {
+      <igx-card class="supplies-cargo-card">
+        <igx-card-header>
+          <h3 igxCardHeaderTitle>
+            {{ item.item_name }}
+          </h3>
+          <h5 igxCardHeaderSubtitle>
+            {{ item.quantity }}
+          </h5>
+        </igx-card-header>
+        <igx-card-content class="body-content">
+          <div class="column-layout supplies-cargo-card-content">
+            <p class="ig-typography__body-2 content">
+              {{ item.status }}
+            </p>
+          </div>
+        </igx-card-content>
+        <igx-card-actions class="actions-content">
+          <ng-container igxStart>
+            <button igxButton="contained" type="button" igxRipple class="update-stock-button">
+              <igx-icon>
+                edit
+              </igx-icon>
+              <span>Update Stock</span>
+            </button>
+          </ng-container>
+        </igx-card-actions>
+      </igx-card>
+    }
+  </div>
+</div>

@@ -1,0 +1,55 @@
+:host {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 0;
+}
+.column-layout {
+  display: flex;
+  flex-direction: column;
+}
+.pirating-plans-layout {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 24px;
+  overflow: auto;
+  position: relative;
+  padding: 24px;
+  min-width: 50px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.pirating-plans-header-layout {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 8px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.pirating-plans-title {
+  height: max-content;
+  min-width: min-content;
+}
+.icon-es8lp5 {
+  --size: 24px;
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.pirating-plans-search-input {
+  --ig-size: var(--ig-size-small);
+  height: max-content;
+  min-width: min-content;
+}
+.pirating-plans-grid {
+  --ig-size: var(--ig-size-medium);
+  min-width: 50px;
+  min-height: 500px;
+}

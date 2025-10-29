@@ -1,0 +1,91 @@
+:host {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 0;
+}
+.column-layout {
+  display: flex;
+  flex-direction: column;
+}
+.ammunition-layout {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 24px;
+  overflow: auto;
+  position: relative;
+  padding: 24px;
+  min-width: 50px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.ammunition-header-layout {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 8px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.row-layout {
+  display: flex;
+}
+.group {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 12px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.ammunition-card {
+  height: max-content;
+  min-width: 240px;
+  max-width: 280px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.ammunition-card-content {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 8px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.content {
+  height: max-content;
+  min-width: min-content;
+}
+.icon-i03etr {
+  --size: 24px;
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.body-content {
+  min-width: 50px;
+  min-height: 50px;
+}
+.actions-content {
+  min-width: 50px;
+  min-height: 40px;
+}
+.ammunition-search-input {
+  --ig-size: var(--ig-size-small);
+  height: max-content;
+  min-width: min-content;
+}
+.resupply-button {
+  --ig-size: var(--ig-size-medium);
+  height: max-content;
+}
